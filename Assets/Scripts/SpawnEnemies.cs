@@ -4,15 +4,13 @@ using UnityEngine;
 
 public class SpawnEnemies : MonoBehaviour
 {
-    [SerializeField] GameObject _enemy;
-    [SerializeField] Transform[] _pointsOfSpawn;
+    [SerializeField] private Enemy _enemy;
+    [SerializeField] private Transform[] _pointsOfSpawn;
     [SerializeField] float _secondsBetweenSpawn;
-
-    private Coroutine _coroutine;
 
     private void Start()
     {
-        _coroutine = StartCoroutine(Spawn());
+       StartCoroutine(Spawn());
     }
 
     private IEnumerator Spawn()
@@ -24,7 +22,5 @@ public class SpawnEnemies : MonoBehaviour
             Instantiate(_enemy, spawnPoint.transform.position, Quaternion.identity);
             yield return waitForSeconds;
         }
-
-        StopCoroutine(_coroutine);
     }
 }

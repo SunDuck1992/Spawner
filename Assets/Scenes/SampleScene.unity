@@ -162,7 +162,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 977031da233f8d842a12a8c21159bf2e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _enemy: {fileID: 6147829695824741772, guid: 69ea9bfeb9adedf49af84683d6dec58a, type: 3}
+  _enemy: {fileID: 5433333127523392792, guid: a1ae8df36e5b4be42b5b07cc6dc3266c, type: 3}
   _pointsOfSpawn:
   - {fileID: 1283392414}
   - {fileID: 741060204}
